@@ -10,7 +10,7 @@ rm gradle-${GRADLE_VERSION}-bin.zip && \
 apk del curl && \
 rm -rf /var/cache/apk/*
 #Set environmentvariables
-ENV GRADLE_HOME /opt/gradle-$GRADLE_HOME
+ENV GRADLE_HOME /opt/gradle-$GRADLE_VERSION
 ENV PATH $PATH:$GRADLE_HOME/bin
 #Standard ENTRYPOINT
 ENTRYPOINT ["gradle"]
